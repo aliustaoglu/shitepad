@@ -1,1 +1,9 @@
-$font-family: Source Sans Pro;
+textarea {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+  background: url('src/assets/img/bg.png');
+  background-attachment: local;
+  background-repeat: no-repeat;
+  padding-left: 35px;
+  padding-top: 10px;
+}

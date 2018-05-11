@@ -35,7 +35,7 @@ class App extends React.Component {
 
   componentDidMount() {
     window.addEventListener('resize', this.updateDimensions.bind(this));
-    enableTab('metin')
+    enableTab('metin');
   }
 
   componentWillUnmount() {
@@ -45,7 +45,13 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <textarea id='metin' style={{ height: this.state.innerHeight, width: this.state.innerWidth }} />
+        <textarea
+          id="metin"
+          style={{
+            height: this.state.innerHeight - 6,
+            width: this.state.innerWidth
+          }}
+        />
       </div>
     );
   }
